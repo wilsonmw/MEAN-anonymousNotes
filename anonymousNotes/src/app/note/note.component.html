@@ -1,0 +1,18 @@
+<fieldset>
+  <legend>
+    <h1>Anonymous Notes</h1>
+
+  </legend>
+  <form (submit)="onSubmit()" #formData="ngForm">
+    Note: <input type="text" name="content" id="content" required minlength="3" [(ngModel)]="note.content" #content="ngModel">
+    <input type='submit' id="subButton" [disabled]='formData.invalid' value='Add Note'>
+  </form>
+  <div id="noteSection">
+    <div class = "noteShow" *ngFor="let note of notes">
+      {{note.content}}<br>
+      {{note.createdAt | date: 'medium'}}
+    </div>
+
+  </div>
+
+</fieldset>

@@ -1,0 +1,26 @@
+.noteShow{
+    border: 1px solid black;
+    padding: 1%;
+    background-color: lightgray;
+    width: 35%;
+    margin: 1%;
+}
+#noteSection{
+    height: 600px;
+    overflow: scroll;
+}
+form{
+    height: 50px;
+    border: 2px solid black;
+    margin: 2%;
+}
+#content{
+    margin: 1%;
+    width: 50%;
+}
+#subButton{
+    background-color: green;
+    color: white;
+    height: 25px;
+    
+}
